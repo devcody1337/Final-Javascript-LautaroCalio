@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnero - Rust</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
+    <script defer src="../js/turnero.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="Logo Rust">
+            </a>
+            <a href="login.html" id="logout-btn" class="btn btn-primary">Cerrar Sesión</a>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <div class="container turnero-layout">
+            <div class="calendar-container">
+                <h2>1. Elige una fecha</h2>
+                <div id="calendar"></div>
+                <section class="reservas-section">
+                    <h2>Mis Reservas</h2>
+                    <div id="mis-reservas">
+                        <p>No tenés ninguna reserva.</p>
+                    </div>
+                </section>
+            </div>
+            <div class="turnos-container">
+                <h2 id="turnos-disponibles-titulo">2. Elige un turno</h2>
+                <div id="lista-turnos">
+                    <p>Selecciona una fecha del calendario para ver los turnos disponibles.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Rust Centro de Entrenamiento. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

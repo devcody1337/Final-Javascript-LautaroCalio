@@ -1,0 +1,91 @@
+:root {
+    --color-acento: #FFFFFF;
+    --color-fondo: #0A0A0A;
+    --color-superficie: #1A1A1A;
+    --color-texto-primario: #EAEAEA;
+    --color-texto-secundario: #999999;
+    --color-borde: #333333;
+    --font-titulos: 'Oswald', sans-serif;
+    --font-cuerpo: 'Roboto', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-cuerpo); background-color: var(--color-fondo); color: var(--color-texto-primario); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+h1, h2, h3 { font-family: var(--font-titulos); text-transform: uppercase; color: var(--color-acento); margin-bottom: 20px; font-weight: 700; }
+h2 { font-size: 2.8rem; text-align: center; margin-bottom: 40px; }
+p { color: var(--color-texto-secundario); margin-bottom: 20px; }
+section { padding: 100px 0; }
+
+header { background-color: rgba(10, 10, 10, 0.75); backdrop-filter: blur(10px); border-bottom: 1px solid var(--color-borde); padding: 15px 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+header .container { display: flex; justify-content: space-between; align-items: center; }
+.logo img { height: 50px; }
+nav ul { list-style: none; display: flex; gap: 35px; }
+nav a { color: var(--color-texto-primario); text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; transition: color 0.3s ease; }
+nav a:hover { color: var(--color-acento); }
+
+.btn { padding: 12px 28px; text-decoration: none; border-radius: 5px; font-weight: bold; text-transform: uppercase; transition: all 0.3s ease; display: inline-block; border: 2px solid; font-size: 0.9rem; cursor: pointer; }
+.btn-primary { background-color: var(--color-acento); color: var(--color-fondo); border-color: var(--color-acento); }
+.btn-primary:hover { background-color: transparent; color: var(--color-acento); }
+.btn-secondary { background-color: transparent; color: var(--color-acento); border-color: var(--color-acento); }
+.btn-secondary:hover { background-color: var(--color-acento); color: var(--color-fondo); }
+
+.hero { height: 100vh; background-image: url('../images/hero-bg.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; padding: 0; }
+.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+.hero-content { position: relative; z-index: 2; max-width: 800px; }
+.hero h1 { font-size: 5rem; line-height: 1.1; margin-bottom: 20px; }
+.hero p { font-size: 1.5rem; color: var(--color-texto-primario); max-width: 600px; margin: 0 auto 40px auto; }
+
+#quienes-somos {
+    background-color: var(--color-superficie);}
+#quienes-somos .container { max-width: 800px; text-align: center; }
+#quienes-somos p { font-size: 1.2rem; color: var(--color-texto-primario); }
+
+#entrenamientos {
+    background-color: var(--color-fondo);
+}
+.clases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+.clase-card { background-color: var(--color-superficie); border: 1px solid var(--color-borde); border-radius: 8px; overflow: hidden; transition: transform 0.3s ease, border-color 0.3s ease; }
+.clase-card:hover { transform: translateY(-10px); border-color: var(--color-acento); }
+.clase-card img { width: 100%; height: 220px; object-fit: cover; filter: grayscale(80%); transition: filter 0.3s ease; }
+.clase-card:hover img { filter: grayscale(0%); }
+.card-content { padding: 30px; }
+.card-content h3 { font-size: 1.5rem; }
+
+#grilla-horarios {
+     background-color: var(--color-superficie);
+}
+.subtitulo { text-align: center; max-width: 600px; margin: -20px auto 40px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 40px; text-align: center; background-color: var(--color-fondo); }
+thead { font-family: var(--font-titulos); font-size: 1.2rem; border-bottom: 3px solid var(--color-acento); }
+th, td { padding: 20px; border: 1px solid var(--color-borde); }
+tbody tr:nth-child(even) { background-color: #111; }
+.cta-turnero { text-align: center; margin-top: 60px; }
+.cta-turnero h3 { font-size: 2rem; color: var(--color-acento); }
+
+#contacto {
+    background-color: var(--color-fondo);
+    text-align: center;
+}
+.contacto-info p { font-size: 1.2rem; color: var(--color-texto-primario); }
+.contacto-info p strong { color: var(--color-acento); }
+footer { background-color: #000; text-align: center; padding: 30px 0; border-top: 1px solid var(--color-borde); color: var(--color-texto-secundario); }
+
+.page-container { padding-top: 150px; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+.login-container { background-color: var(--color-superficie); padding: 50px; border-radius: 8px; border: 1px solid var(--color-borde); max-width: 500px; margin: 0 auto; text-align: center; }
+#login-form { display: flex; flex-direction: column; gap: 20px; }
+#login-form input { background-color: var(--color-fondo); border: 1px solid var(--color-borde); color: var(--color-texto-primario); padding: 15px; border-radius: 5px; font-size: 1rem; font-family: var(--font-cuerpo); }
+#login-form button { width: 100%; }
+.turnero-layout { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: flex-start; }
+.turnero-layout h2 { font-size: 2rem; text-align: left; margin-bottom: 20px; }
+.calendar-container, .turnos-container { background-color: var(--color-superficie); padding: 30px; border-radius: 8px; border: 1px solid var(--color-borde); }
+:root { --vanilla-calendar-bg: transparent; --vanilla-calendar-color: var(--color-texto-primario); --vanilla-calendar-main-color: var(--color-acento); --vanilla-calendar-border: 1px solid var(--color-borde); --vanilla-calendar-border-radius: 8px; --vanilla-calendar-font-size: 1em; --vanilla-calendar-week-bg: var(--color-fondo); }
+.reservas-section { margin-top: 40px; }
+.turno-item, .reserva-item { background-color: var(--color-fondo); padding: 20px; margin-bottom: 15px; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--color-borde); transition: all 0.2s ease-in-out; }
+.turno-item:hover { border-color: var(--color-acento); }
+.turno-item span, .reserva-item span { font-size: 1.1rem; font-weight: bold; }
+.reservar-btn { background-color: transparent; color: var(--color-acento); border: 1px solid var(--color-acento); padding: 8px 15px; }
+.reservar-btn:hover:not(:disabled) { background-color: var(--color-acento); color: var(--color-fondo); }
+.reservar-btn:disabled { background-color: var(--color-superficie); color: var(--color-texto-secundario); border-color: var(--color-borde); cursor: not-allowed; }
+.reserva-item { border-left: 5px solid var(--color-acento); }
+.btn-cancelar { background-color: #902d2d; color: white; border: 1px solid #902d2d; padding: 8px 15px; }

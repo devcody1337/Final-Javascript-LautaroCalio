@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust - Centro de Entrenamiento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo Rust">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="#entrenamientos">Entrenamientos</a></li>
+                    <li><a href="#grilla-horarios">Horarios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="pages/turnero.html" class="btn btn-primary">Reservá tu Turno</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Vení, entrená, transformate.</h1>
+                <p>Entrenamiento con compromiso y buena onda. Horarios para tu ritmo y un grupo que acompaña el proceso. Hacete fuerte, hacete Rust.</p>
+                <a href="#entrenamientos" class="btn btn-secondary">Ver Entrenamientos</a>
+            </div>
+        </section>
+
+        <section id="quienes-somos">
+            <div class="container">
+                <h2>Más que un gimnasio, una comunidad de gente increible.</h2>
+                <p>Rust nació de la pasión por el entrenamiento real, sin atajos. </p>
+                <p>Nuestro espacio está pensado para que te sientas parte de algo más: un lugar donde la
+            motivación se contagia, el apoyo es mutuo y cada logro se celebra.</p>
+        <p>Contamos con equipamiento de primera, disciplinas para todos los gustos y coaches que
+            te acompañan para que superes tus propios límites día tras día.</p>
+            </div>
+        </section>
+
+        <section id="entrenamientos">
+            <div class="container">
+                <h2>Nuestros entrenamientos</h2>
+                <div class="clases-grid">
+                    <div class="clase-card">
+                        <img src="images/clase-fuerza.png" alt="Entrenamiento de fuerza">
+                        <div class="card-content">
+                            <h3>Entrenamiento de Fuerza</h3>
+                            <p>Desarrolla tu potencia máxima. Clases enfocadas en los levantamientos básicos (sentadilla, peso muerto, press de banca) para construir una base sólida de fuerza y masa muscular.</p>
+                        </div>
+                    </div>
+                    <div class="clase-card">
+                        <img src="images/clase-cardio.png" alt="Entrenamiento funcional y HIIT">
+                        <div class="card-content">
+                            <h3>Funcional & HIIT</h3>
+                            <p>Mejora tu resistencia y agilidad. Circuitos dinámicos de alta intensidad que combinan ejercicios corporales y con equipamiento ligero para un acondicionamiento físico total.</p>
+                        </div>
+                    </div>
+                    <div class="clase-card">
+                        <img src="images/clase-flex.png" alt="Clase de movilidad y flexibilidad">
+                        <div class="card-content">
+                            <h3>Movilidad y Flexibilidad</h3>
+                            <p>El pilar de un cuerpo sano y sin lesiones. Clases diseñadas para mejorar tus rangos de movimiento, recuperar tus músculos y optimizar tu rendimiento en todos los entrenamientos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="grilla-horarios">
+            <div class="container">
+                <h2>Grilla de Clases Semanal</h2>
+                <p class="subtitulo">Este es nuestro cronograma. ¡Encontrá tu clase y preparate para entrenar!</p>
+                
+                <div class="horarios-tabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Hora</th>
+                                <th>Lunes</th>
+                                <th>Martes</th>
+                                <th>Miércoles</th>
+                                <th>Jueves</th>
+                                <th>Viernes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>08:00</td>
+                                <td class="funcional">Funcional</td>
+                                <td class="fuerza">Fuerza</td>
+                                <td class="funcional">Funcional</td>
+                                <td class="fuerza">Fuerza</td>
+                                <td class="funcional">Funcional</td>
+                            </tr>
+                             <tr>
+                                <td>10:00</td>
+                                <td class="movilidad">Movilidad</td>
+                                <td>-</td>
+                                <td class="movilidad">Movilidad</td>
+                                <td>-</td>
+                                <td class="movilidad">Movilidad</td>
+                            </tr>
+                            <tr>
+                                <td>18:00</td>
+                                <td class="fuerza">Fuerza</td>
+                                <td class="funcional">Funcional</td>
+                                <td class="fuerza">Fuerza</td>
+                                <td class="funcional">Funcional</td>
+                                <td class="fuerza">Fuerza</td>
+                            </tr>
+                            <tr>
+                                <td>20:00</td>
+                                <td class="funcional">Funcional</td>
+                                <td class="fuerza">Fuerza</td>
+                                <td class="funcional">Funcional</td>
+                                <td class="fuerza">Fuerza</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cta-turnero">
+                    <h3>¿Listo para reservar tu lugar?</h3>
+                    <a href="pages/turnero.html" class="btn btn-primary">Ir al Turnero Online</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contacto">
+             <div class="container">
+                <h2>Encontranos</h2>
+                <div class="contacto-info">
+                    <p><strong>Dirección:</strong> Zorrilla 202, Adrogué.</p>
+                    <p><strong>Teléfono:</strong> +54 11 4098-7534</p>
+                    <p><strong>Email:</strong> info@rust.com</p>
+                </div>
+             </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Rust Centro de Entrenamiento. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
