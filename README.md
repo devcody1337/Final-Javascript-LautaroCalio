@@ -7,3 +7,5 @@ de zona horaria, asi que no me quedo otra que tener que buscar la solucion por a
 sumarle 1 dia a todas las fechas seteando la zona horaria local en UTC.
 
 La verdad es que por momentos se me hizo muy complejo trabajar con el tema fechas, y todo lo que es dom y eventos tambien me costo demasiado.
+
+El turnero a futuro me gustaria poder implementarlo con una base de datos y con mayores herramientas ya que es un proyecto real. El gimnasio existe y todo el css/estilos estan basados en su linea grafica.
